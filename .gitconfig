@@ -1,0 +1,38 @@
+[alias]
+
+	# View abbreviated SHA, description, and history graph of all commits.
+	l = log --all --graph --oneline
+
+  # Pull in remote changes for the current repository and all its submodules.
+	p = pull --recurse-submodules
+
+	# Clone a repository including all submodules.
+	c = clone --recursive
+
+  # Show verbose output about tags, branches or remotes
+	tags = tag -l
+	branches = branch --all
+	remotes = remote --verbose
+
+  # List aliases.
+	aliases = config --get-regexp alias
+
+	# Amend the currently staged files to the latest commit.
+	amend = commit --amend --no-edit
+
+  # Show the user email for the current repository.
+	whoami = config user.email
+
+[branch]
+
+	# Show most recently changed branches first.
+	sort = -committerdate
+
+[core]
+
+	# Global `.gitignore`.
+	excludesfile = ~/.gitignore_global
+
+[user]
+	name = Christopher Wong
+	email = cwong8257@gmail.com
