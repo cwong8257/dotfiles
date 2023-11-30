@@ -33,6 +33,10 @@
 	# Global `.gitignore`.
 	excludesfile = ~/.gitignore_global
 
+[push]
+	# Assume --set-upstream on default push when no upstream tracking exists for the current branch
+	autoSetupRemote = true
+
 [user]
 	name = Christopher Wong
 	email = cwong8257@gmail.com
